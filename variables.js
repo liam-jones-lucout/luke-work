@@ -161,4 +161,20 @@ What is happening?!
   [bob]      (jim = bob;)       [jim]
 
  bob[3] = "d"
+
+
+ MEMORY EXAMPLES
+ (SIMPLIFIED HOW MEMORY WORKS EXAMPLE)
+
+ 1,2,3,4,5,6,7,8,9   
+
+
+ 5: ["a", "b", "c"]
+
+
+ bob = #5
+ jim = bob
+ jim = #5
 */
+
+

@@ -9,7 +9,7 @@ body {
 }
 /* Headers */
 header {
-    background-image: url(/Pictures/Galactus.jpg);
+    background-image: url(./Pictures/Galactus.jpg);
     background-size: 100%;
     background-position: center;
     height: 700px;
@@ -18,7 +18,7 @@ header {
 }
 
 header .logo a {
-    background-image: url(/Pictures/Fortnite\ logo.png);
+    background-image: url(./Pictures/Fortnite\ logo.png);
     background-size: 300px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -105,9 +105,7 @@ nav a:active {
 
 .text {
     color: black;
-    border-style: solid;
-    border-color: grey;
-    background-color: grey;
+    padding: 3px 0px;
 }
 
 .current div img {
@@ -131,7 +129,9 @@ footer {
     padding: 10px 20px;
 }
 
-
+.image-link {
+    border: 2px solid black;
+}
 
 
 
