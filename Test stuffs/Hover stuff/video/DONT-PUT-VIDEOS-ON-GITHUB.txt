@@ -1,0 +1,5 @@
+DON’T PUT VIDEO FILES IN YOUR GIT/GITHUB REPO
+
+I only did this so you’d have complete examples.
+
+Do what I say, not what I do. :P

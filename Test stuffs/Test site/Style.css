@@ -1,0 +1,139 @@
+body {
+
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    
+   
+}
+/* Headers */
+header {
+    background-image: url(/Pictures/Galactus.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 700px;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo a {
+    background-image: url(/Pictures/Fortnite\ logo.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 300px;
+    height: 110px;
+    position: relative;
+    text-indent: -999999px;
+    top: -40px;
+}
+
+h1 {
+    color: white;
+}
+/* Nav Style */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active {
+    text-decoration: none;
+}
+/*  RESPONSIVE RULES */
+
+@media screen and (max-width: 1200px){
+    header {
+        height: 500px;
+    }
+}    
+@media screen and (max-width: 800px){
+    header {
+        height: 350px;
+    }
+} 
+
+
+/* Sections */
+.current {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border: thick;
+    border: rgb(54, 54, 54);
+    border-style: solid;
+}
+
+.current div {
+    color: black;
+    margin: auto;
+    text-align: center;
+    width: 200px
+    
+}
+
+.current div a {
+    text-decoration: none;
+    
+}
+
+.current div.shop {
+    border-style: solid;
+    border-color: grey;
+    
+    
+}
+
+.text {
+    color: black;
+    border-style: solid;
+    border-color: grey;
+    background-color: grey;
+}
+
+.current div img {
+    width: 200px;    
+}
+
+
+.lower {
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.lower div {
+    background-color: red;
+    margin: auto;
+    width: 200px;
+    }
+footer {
+    color: black;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+

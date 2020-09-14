@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Test Web Page</title>
+        <style>
+            body {
+                background: rgb(94, 93, 93);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            h1 {
+                color: red;
+
+            }
+            h2 {
+                color: green;
+            }
+            button {
+                background: rgb(218, 44, 44);
+                color: white;
+                border: none;
+                border-radius: 12px;
+                padding: 20px;
+                cursor: pointer;
+            }
+            .button1 {
+                border-radius: 24px;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Test Website Header</h1>
+        <h2>Test stuff in the site</h2>
+        <p>hello this is all just a test</p>
+
+        <button class="button button1">Click here for more tests</button>
+        <button class="button button2">Click here for more tests2</button>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.unit {
+  width: 50%;
+}
+
+.embed {
+  position: relative;
+}
+
+.embed__item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.embed--16by9 {
+  padding-top: 56.25%;
+}
