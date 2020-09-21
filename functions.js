@@ -30,11 +30,13 @@ function gary(){
 
 function betty() {
     const bob = 1;
+    const jim = 3;
     console.log(bob); // Prints out 1
 
     const steve = function() {
         const bob = 2;
         console.log(bob); // Prints out 2
+        console.log(jim); // Prints out 3
     }
 
     console.log(bob); // Prints out 1
@@ -74,8 +76,35 @@ Functions can take arguments (or parameters) which they can use in their process
 */
 
 function addNumbersTogetherAndPrint(numberA, numberB) {
+    // This is MILLIONS OF COMPLICATE LINES OF MATHS
     console.log(numberA + numberB);
 }
+
+addNumbersTogetherAndPrint(1, 2)
+addNumbersTogetherAndPrint(1, 4)
+addNumbersTogetherAndPrint(4562345, 13241354)
+
+// Real life example
+
+// We're making a game and we want to add a way to save it.
+
+function saveGame(gameState, saveFileName) {
+    const file = fileSystem.openFile(saveFileName);
+
+    file.write(gameState);
+
+    file.close();
+}
+
+const saveGameButton = document.getElementById("savegame-button");
+
+saveGameButton.onClick = function() {
+    const currentState = getCurrentState();
+    const fileName = askPlayerForFileName();
+
+    saveGame(currentState, fileName);
+}
+
 
 // RETURN VALUE
 // Functions can return a value as a result of the work they've done
@@ -87,5 +116,28 @@ function veryComplicatedMathsForumla(numberA, numberB) {
 const aNumber = 1;
 const anotherNumber = 5;
 
-const theSum = veryComplicatedMathsForumla(aNumber, anotherNumber);
-theSum === 6; //is theSum exactly the same as the number 6?
+const theResult = veryComplicatedMathsForumla(aNumber, anotherNumber);
+theResult === 6; //is theSum exactly the same as the number 6?
+
+const theOtherResult = veryComplicatedMathsForumla(10, 20);
+theOtherResult === 30; //is theSum exactly the same as the number 30?
+
+
+function doAThing(thingToDo) {
+    thingToDo()
+}
+
+
+doAThing(function() {console.log("boobies")})
+
+
+
+
+
+function doADifferentThing(aNumber) {
+    console.log(aNumber) // 2
+}
+
+doADifferentThing(2)
+doADifferentThing(4)
+doADifferentThing(74441654644)

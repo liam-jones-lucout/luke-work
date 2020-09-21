@@ -77,7 +77,7 @@ div.box {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
 }
 .btn {
     line-height: 50px;
@@ -85,6 +85,11 @@ div.box {
     text-align: center;
     width: 250px;
     cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
 }
 
 .btn-two {

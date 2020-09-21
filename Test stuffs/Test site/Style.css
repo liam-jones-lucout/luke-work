@@ -150,10 +150,15 @@ nav a:active {
       z-index: -1;
       animation: animate 20s linear infinite;
       filter:blur(15px);
+      animation-play-state: paused;
+}
+
+.image-link.unpaused::before {
+    animation-play-state: running;
 }
 
 @keyframes animate {
-    10% {
+    0% {
       background-position: 0 0;
     }
     50.01% {
