@@ -1,0 +1,59 @@
+body {
+
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    
+   
+}
+
+/* Headers */
+
+header {
+    background-image: url(./Pictures/Galactus.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 800px;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo a {
+    background-image: url(./Pictures/Fortnite\ logo2.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 300px;
+    height: 110px;
+    position: relative;
+    text-indent: -999999px;
+    top: -10px;
+}
+
+/* Nav Style */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active {
+    text-decoration: none;
+}

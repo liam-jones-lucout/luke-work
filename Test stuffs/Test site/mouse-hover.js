@@ -7,18 +7,6 @@ const elementToAudio = {
 
 const AUDIO_VOLUME = 0.05;
 
-for (const elementId in elementToAudio) {
-   if (elementToAudio.hasOwnProperty(elementId)) {
-      const audioId = elementToAudio[elementId];
-      
-      const element = document.getElementById(elementId);
-      const audio = document.getElementById(audioId);
-      audio.volume = AUDIO_VOLUME;
-
-      setupMouseEvents(element, audio);
-   }
-}
-
 function setupMouseEvents(mouseEventElement, audioElement) {
    mouseEventElement.onmouseover = function () {
       audioElement.play();
@@ -28,3 +16,17 @@ function setupMouseEvents(mouseEventElement, audioElement) {
       audioElement.pause();
    }
 }
+for (const elementId in elementToAudio) {
+   
+      const audioId = elementToAudio[elementId];
+
+      const element = document.getElementById(elementId);
+      const audio = document.getElementById(audioId);
+      audio.volume = AUDIO_VOLUME;
+
+      setupMouseEvents(element, audio);
+      
+   }
+
+
+

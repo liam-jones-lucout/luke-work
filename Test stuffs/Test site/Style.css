@@ -1,6 +1,6 @@
 body {
 
-    background-color: white;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
@@ -12,13 +12,19 @@ header {
     background-image: url(./Pictures/Galactus.jpg);
     background-size: 100%;
     background-position: center;
-    height: 700px;
+    height: 800px;
     padding: 10px;
     text-align: center;
 }
 
+.home-video {
+    width: 600px;
+    height: 300px;
+       
+}
+
 header .logo a {
-    background-image: url(./Pictures/Fortnite\ logo.png);
+    background-image: url(./Pictures/Fortnite\ logo2.png);
     background-size: 300px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -26,11 +32,12 @@ header .logo a {
     height: 110px;
     position: relative;
     text-indent: -999999px;
-    top: -40px;
+    top: -10px;
 }
 
 h1 {
     color: white;
+    text-align: center;
 }
 /* Nav Style */
 
@@ -67,7 +74,20 @@ nav a:active {
 }    
 @media screen and (max-width: 800px){
     header {
-        height: 350px;
+        height: 500px;
+    }
+    .current {
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        border: thick;
+        border: rgb(54, 54, 54);
+        border-style: solid;
+    }
+    .home-video {
+        width: 400px;
+        height: 200px;
     }
 } 
 
@@ -75,16 +95,19 @@ nav a:active {
 /* Sections */
 .current {
     padding: 20px;
-    margin: 20px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     border: thick;
     border: rgb(54, 54, 54);
     border-style: solid;
+    
+    
+    
 }
 
 .current div {
-    color: black;
+    color: white;
     margin: auto;
     text-align: center;
     width: 200px
@@ -95,45 +118,48 @@ nav a:active {
     text-decoration: none;
     
 }
-
-.current div.shop {
-    border-style: solid;
-    border-color: grey;
     
-    
-}
 
 .text {
-    color: black;
     padding: 3px 0px;
 }
 
 .current div img {
     width: 200px;    
+    
 }
 
 
-.lower {
-    color: gray;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-.lower div {
-    background-color: red;
-    margin: auto;
-    width: 200px;
-    }
-footer {
-    color: black;
-    padding: 10px 20px;
-}
+
 
 .image-link {
-    border: 2px solid black;
+    position: relative;
+    margin: 250px auto 0;
+    width: 400px;
+    height: 250px;
+}
+.image-link::before {
+      content:'';
+      position: absolute;
+      top:-2px;
+      left:-2px;
+      width:calc(100% + 4px);
+      height:calc(90% + 4px);
+      background: linear-gradient(45deg, #ebb60b, #fffb01, #d19a47, #ffff00, #e0a558, #ebb60b, #fffb01, #d69d48, #ffff00, #fc9b1c);
+      background-size: 400%;
+      z-index: -1;
+      animation: animate 20s linear infinite;
+      filter:blur(15px);
 }
 
-
-
-
-
+@keyframes animate {
+    10% {
+      background-position: 0 0;
+    }
+    50.01% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
